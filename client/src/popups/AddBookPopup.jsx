@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleAddBookPopup } from "../store/slices/popupSlice";
+import { toggleAddBookPopup } from "../store/slices/popUpSlice";
+// import { toggleAddBookPopup } from "../store/slices/popupSlice";
 import { addBook, getAllBooks } from "../store/slices/bookSlice";
 import { toast } from "react-toastify";
 import { X, Book, User, DollarSign, Hash, AlignLeft, GraduationCap, Layers, Calendar, Clock } from "lucide-react";
