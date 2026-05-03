@@ -1,0 +1,18 @@
+/* App.css */
+#root {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Fix for horizontal scroll issue */
+body {
+    overflow-x: hidden;
+}
+
+/* Ensure all containers start from left */
+.container, .wrapper, .main-content {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
