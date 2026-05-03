@@ -17,8 +17,7 @@ console.log(`   - api_key: ${process.env.CLOUDINARY_CLIENT_API ? "Set" : "❌ Mi
 console.log(`   - api_secret: ${process.env.CLOUDINARY_CLIENT_SECRET ? "Set" : "❌ Missing"}`);
 
 // Start Server on all network interfaces
-app.listen(process.env.PORT, '0.0.0.0', () => {
-    console.log(`🚀 server is running on port ${process.env.PORT}`);
-    console.log(`📱 Local access: http://localhost:${process.env.PORT}`);
-    console.log(`🌐 Network access: http://10.168.229.80:${process.env.PORT}`);
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`server is running on port ${PORT}`);
 });
